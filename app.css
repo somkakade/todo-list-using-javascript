@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+.todos-container-wrapper {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 500px;
+  height: 500px;
+  padding: 15px;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+#input-text-filed {
+  border: 1px solid red;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#add-btn {
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: cyan;
+  border: none;
+  cursor: pointer;
+}
+.todos-container {
+  overflow-y: auto;
+}
+.todos-item-container {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  /* border: 1px solid red;
+  padding: 2px; */
+}
+#todo-text {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  width: 100%;
+}
+.line-through {
+  text-decoration: line-through;
+  user-select: none;
+  color: blue;
+}
+:is(#edit-button, #delete-button) {
+  padding: 7px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* Error Message */
+#error-message {
+  font-size: 14px;
+  color: red;
+}
