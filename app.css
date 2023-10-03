@@ -14,8 +14,8 @@ body {
 .todos-container-wrapper {
   background-color: #fff;
   border-radius: 5px;
-  width: 500px;
-  height: 500px;
+  /* width: 500px;
+  height: 500px; */
   padding: 15px;
 }
 h2 {
@@ -23,6 +23,7 @@ h2 {
   letter-spacing: 2px;
   margin-bottom: 15px;
   text-align: center;
+  font-size: 32px;
 }
 .input-group {
   display: flex;
@@ -40,12 +41,13 @@ h2 {
 }
 #add-btn {
   height: 40px;
-  padding: 10px;
+  padding: 10px 29px;
   font-size: 16px;
   font-weight: bold;
   background-color: cyan;
   border: none;
   cursor: pointer;
+  line-height: 20px;
 }
 .todos-container {
   overflow-y: auto;
@@ -58,10 +60,11 @@ h2 {
   padding: 2px; */
 }
 #todo-text {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   font-weight: bold;
   width: 100%;
+  margin-bottom: 0;
 }
 .line-through {
   text-decoration: line-through;
